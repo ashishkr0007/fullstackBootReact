@@ -1,20 +1,22 @@
-package com.ashish.fullstackbackend.controller;
+package com.ashish.backend.controller;
 
-import com.ashish.fullstackbackend.exception.UserNotFoundException;
-import com.ashish.fullstackbackend.model.User;
-import com.ashish.fullstackbackend.repository.UserRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import com.ashish.backend.entity.User;
+import com.ashish.backend.exception.UserNotFoundException;
+import com.ashish.backend.repository.UserRepo;
 
 import java.util.List;
 
 
 @RestController
 @CrossOrigin("http://localhost:3000")
-public class UserController {
+public class MyController {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserRepo userRepository;
 
     @PostMapping("/user")
     User newUser(@RequestBody User newUser) {
@@ -55,3 +57,16 @@ public class UserController {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

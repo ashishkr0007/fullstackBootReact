@@ -1,5 +1,4 @@
-package com.ashish.fullstackbackend.exception;
-
+package com.ashish.backend.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

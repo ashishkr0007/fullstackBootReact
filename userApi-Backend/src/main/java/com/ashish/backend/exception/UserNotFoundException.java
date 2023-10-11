@@ -1,4 +1,4 @@
-package com.ashish.fullstackbackend.exception;
+package com.ashish.backend.exception;
 
 
 public class UserNotFoundException extends RuntimeException{
@@ -6,3 +6,7 @@ public class UserNotFoundException extends RuntimeException{
         super("Could not found the user with id "+ id);
     }
 }
+
+
+
+
